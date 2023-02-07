@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3wv6((1u9l640c42x--!%7$sl(#(zs!d57b5y)j9guce$-_8nk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ioan93andrei.github.io/Django-CRUD-Animal-Cards/']
 
 
 # Application definition
