@@ -9,9 +9,9 @@
             <h3>{{ card.name }}</h3> <br/>
             <p>{{ card.description }}</p> <br/>
             <div class="card-buttons">
-                <a href="{% url 'delete_view' card.id %}"><button type="submit">Delete</button></a>
-                <a href="{% url 'update_view' card.id %}"><button type="submit">Update</button></a>
-                <a href="{% url 'detail_view' card.id %}"><button type="submit">Info</button></a>
+                <a href="{% url 'delete_view' card.id %}"><button type="submit" class="delete-button">Delete</button></a>
+                <a href="{% url 'update_view' card.id %}"><button type="submit" class="update-button">Update</button></a>
+                <a href="{% url 'detail_view' card.id %}"><button type="submit" class="info-button">Info</button></a>
             </div>
         </div>
     {% endfor %}
