@@ -11,10 +11,18 @@
                 <a href="{% url 'delete_view' card.id %}"><button type="submit" class="delete-button">Delete</button></a>
                 <a href="{% url 'update_view' card.id %}"><button type="submit" class="update-button">Update</button></a>
                 <a href="{% url 'detail_view' card.id %}"><button type="submit" class="info-button">Info</button></a>
+                <a href="{% url 'create_blog' card.id %}"><button type="submit" class="blog-button">Blog</button></a>
             </div>
         </div>
-        <div class="blog-info">
-            <h2>Journal</h2>
-        </div>
+            <div class="blog">
+                <h2>Journal</h2>
+                {% for blog in blogs %}
+                <div id="blog-info">
+                    <p>{{ blog.text }}</p>
+                    <p>{{ blog.pub_date }}</p>
+                    <hr />
+                </div>
+                {% endfor %}
+            </div>
     </div>
 {% endblock %}

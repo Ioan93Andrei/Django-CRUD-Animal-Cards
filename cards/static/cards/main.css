@@ -26,8 +26,12 @@ img {
 
 #card-details {
     display: flex;
-    flex-direction: columns;
-    gap: 2em;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(192, 192, 192, 0.5);
+    /* border: 0.2em solid black; */
+    gap: 10em;
+    width: 100%;
 }
 
 #navbar {
@@ -37,6 +41,27 @@ img {
     align-items: center;
 }
 
+
+.blog {
+    width: 30rem;
+    text-align: center;
+    border: 0.2em solid black;
+    padding: 0.5em;
+    overflow-wrap: break-word;
+}
+
+#blog-info {
+    /* width : 50rem; */
+    margin: 0;
+}
+
+
+
+
+
+
+/* Buttons */
+
 .create-button {
     border-radius: 35%;
     border: none;
@@ -44,6 +69,7 @@ img {
     background-color: #5cdb5c;
     font-size: 1em;
     padding: 0.5em;
+    width: 5em;
 }
 
 .delete-button {
@@ -53,6 +79,7 @@ img {
     background-color: #ff0021;
     font-size: 1em;
     padding: 0.5em;
+    width: 5em;
 }
 
 .update-button {
@@ -62,6 +89,7 @@ img {
     background-color: #ffa500;
     font-size: 1em;
     padding: 0.5em;
+    width: 5em;
 }
 
 .info-button {
@@ -71,4 +99,15 @@ img {
     background-color: #443cf4;
     font-size: 1em;
     padding: 0.5em;
+    width: 5em;
+}
+
+.blog-button {
+    border-radius: 35%;
+    border: none;
+    color:aliceblue;
+    background-color: #ce26f0;
+    font-size: 1em;
+    padding: 0.5em;
+    width: 5em;
 }
